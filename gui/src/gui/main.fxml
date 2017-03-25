@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -10,9 +11,6 @@
 <?import javafx.scene.control.Label?>
 
 <BorderPane maxHeight="900" maxWidth="1400" minHeight="900" minWidth="1400" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mainController">
-   <top>
-      <Button fx:id="btnStart" mnemonicParsing="false" onMouseClicked="#btnStart_OnMouseClicked" text="Start" BorderPane.alignment="CENTER_LEFT" />
-   </top>
    <right>
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -20,10 +18,20 @@
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="143.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="296.0" minHeight="0.0" prefHeight="21.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="653.0" minHeight="0.0" prefHeight="644.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="412.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
         </rowConstraints>
+         <children>
+            <Button fx:id="btnStart" mnemonicParsing="false" onMouseClicked="#btnStart_OnMouseClicked" text="Start" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="Connection:" GridPane.halignment="LEFT">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="btnStop" mnemonicParsing="false" onAction="#btnStop_OnMouseClicked" text="Stop" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+         </children>
       </GridPane>
    </right>
    <bottom>
@@ -36,4 +44,31 @@
          </children>
       </Pane>
    </center>
+   <top>
+      <Pane prefWidth="1400.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Save Image" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Settings">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#mItemConnectionSettings_OnAction" text="Connection Settings" />
+                        <MenuItem mnemonicParsing="false" text="Guiding Settings" />
+                        <MenuItem mnemonicParsing="false" text="Log Settings" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Tracking Statistics" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+   </top>
 </BorderPane>
