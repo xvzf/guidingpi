@@ -24,7 +24,7 @@
             <RowConstraints maxHeight="412.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="btnStart" mnemonicParsing="false" onMouseClicked="#btnStart_OnMouseClicked" text="Start" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Button fx:id="btnStart" mnemonicParsing="false" onAction="#btnStart_OnMouseClicked" text="Start" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
             <Label text="Connection:" GridPane.halignment="LEFT">
                <GridPane.margin>
                   <Insets />
@@ -35,7 +35,12 @@
       </GridPane>
    </right>
    <bottom>
-      <Pane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="-24.0" layoutY="-42.0" />
+            <Label layoutX="14.0" layoutY="17.0" text="Timestamp:" />
+            <Label fx:id="lblTimestamp" layoutX="75.0" layoutY="17.0" text="19:23:49:853364" />
+         </children></Pane>
    </bottom>
    <center>
       <Pane BorderPane.alignment="CENTER">
@@ -66,6 +71,11 @@
                     <MenuItem mnemonicParsing="false" text="Tracking Statistics" />
                   </items>
                 </Menu>
+                  <Menu mnemonicParsing="false" text="Debug">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#mItemDebug500_onAction" text="Start Image Saving (100 images)" />
+                    </items>
+                  </Menu>
               </menus>
             </MenuBar>
          </children>

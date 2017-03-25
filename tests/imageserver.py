@@ -16,6 +16,7 @@ from picamera import PiCamera
 from fractions import Fraction
 from _thread import start_new_thread
 from datetime import datetime
+import struct
 import os
  
 class AstroServer(object):
@@ -73,6 +74,7 @@ class AstroServer(object):
 
     def sendimage(self, connection):
         print("Start sending")
+        # open image
         f = open("/tmp/" + self.captures[-1], 'rb')
 
         connection.sendall(f.read())
@@ -81,11 +83,15 @@ class AstroServer(object):
  
 
     def newimg(self):
-        
-        filename = "astropi_" + datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + ".jpg
+        filename = datetime.now().strftime("%H:%M:%S:")+str(datetime.now().microsecond)
+
+        # safe the exact time as image id as exif information
+        self.camera.exif_tags['EXIF.ImageUniqueID'] = filename
+
         # record image with the video port - because the denoise algorithm of the 
         # stillimage port is ways to slow (takes up to 10 seconds for a 3 seconds image)
-        self.camera.capture( "/tmp/" + filename, use_video_port=True) 
+        # use jpeg as format
+        self.camera.capture("/tmp/" + filename, format='jpeg', use_video_port=True)
 
         self.captures.append(filename)
 
@@ -109,8 +115,9 @@ class AstroServer(object):
             while True:
                 print("Waiting for a connection...")
                 conn, addr = self.server.accept() # c usually used for client ;)
-                print("Connection from: " + str(addr))
-                #self.newimg()
+                # generate timestamp from the filename
+                timestamp = str(self.captures[-1])
+                print("Connection from: " + str(addr) + " sending: " + timestamp)
                 self.sendimage(conn)
                 conn.close()
         except Exception as e:
