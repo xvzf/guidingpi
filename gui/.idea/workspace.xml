@@ -62,7 +62,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="408">
               <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,32 +71,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Settingsmanager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/lib/Settingsmanager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#1271#1272#0" expanded="true" />
-                <element signature="e#1320#1321#0" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/mainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
                 <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
                 <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
-                <element signature="e#2067#2068#0" expanded="true" />
                 <element signature="docComment;method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
                 <element signature="method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
                 <element signature="docComment;method#mItemDebug500_onAction#0;class#mainController#0" expanded="false" />
@@ -105,27 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandBuilder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandBuilder.java">
+      <file leaf-file-name="Settingsmanager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/lib/Settingsmanager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="96" selection-end-column="5" />
+            <state relative-caret-position="612">
+              <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#sendCommand#0;class#CommandBuilder#0" expanded="false" />
-                <element signature="docComment;method#sendCommandParam#0;class#CommandBuilder#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandID.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandID.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,7 +113,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="1139">
               <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
               <folding />
             </state>
@@ -147,8 +123,8 @@
       <file leaf-file-name="connectionSettingsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/dialogs/connectionSettingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+            <state relative-caret-position="776">
+              <caret line="92" column="67" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#connectionSettingsController#0;class#connectionSettingsController#0" expanded="false" />
@@ -190,13 +166,13 @@
         <option value="$PROJECT_DIR$/src/sample/mainController.java" />
         <option value="$PROJECT_DIR$/src/gui/dialog/connectionSettingsController.java" />
         <option value="$PROJECT_DIR$/src/gui/dialog/connectionSettings.fxml" />
-        <option value="$PROJECT_DIR$/src/gui/lib/Settingsmanager.java" />
         <option value="$PROJECT_DIR$/src/gui/main.fxml" />
         <option value="$PROJECT_DIR$/src/gui/dialogs/connectionSettingsController.java" />
         <option value="$PROJECT_DIR$/src/gui/Main.java" />
         <option value="$PROJECT_DIR$/src/gui/lib/CommandID.java" />
-        <option value="$PROJECT_DIR$/src/gui/mainController.java" />
         <option value="$PROJECT_DIR$/src/gui/lib/CommandBuilder.java" />
+        <option value="$PROJECT_DIR$/src/gui/lib/Settingsmanager.java" />
+        <option value="$PROJECT_DIR$/src/gui/mainController.java" />
       </list>
     </option>
   </component>
@@ -244,6 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -327,7 +304,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -655,7 +631,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -736,6 +712,57 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/mainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
+            <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
+            <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
+            <element signature="docComment;method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
+            <element signature="method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
+            <element signature="docComment;method#mItemDebug500_onAction#0;class#mainController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/dialogs/connectionSettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#connectionSettingsController#0;class#connectionSettingsController#0" expanded="false" />
+            <element signature="docComment;method#btnOK_OnAction#0;class#connectionSettingsController#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#connectionSettingsController#0" expanded="false" />
+            <element signature="docComment;method#validIP#0;class#connectionSettingsController#0" expanded="false" />
+            <element signature="method#validIP#0;class#connectionSettingsController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
@@ -749,11 +776,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
-            <element signature="e#2067#2068#0" expanded="true" />
             <element signature="docComment;method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
             <element signature="method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#mItemDebug500_onAction#0;class#mainController#0" expanded="false" />
@@ -802,11 +827,9 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
-            <element signature="e#2067#2068#0" expanded="true" />
             <element signature="docComment;method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
             <element signature="method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#mItemDebug500_onAction#0;class#mainController#0" expanded="false" />
@@ -837,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="1773" column="0" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,13 +878,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="1441" column="0" selection-start-line="1441" selection-start-column="0" selection-end-line="1441" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="408">
           <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -875,29 +896,18 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="1139">
           <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/lib/Settingsmanager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#1271#1272#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandID.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandBuilder.java" />
     <entry file="file://$PROJECT_DIR$/src/gui/dialogs/connectionSettingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+        <state relative-caret-position="776">
+          <caret line="92" column="67" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#connectionSettingsController#0;class#connectionSettingsController#0" expanded="false" />
@@ -909,41 +919,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandID.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/lib/Settingsmanager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
           <folding>
-            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/mainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
-            <element signature="e#2067#2068#0" expanded="true" />
             <element signature="docComment;method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
             <element signature="method#mItemConnectionSettings_OnAction#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#mItemDebug500_onAction#0;class#mainController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="96" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#sendCommand#0;class#CommandBuilder#0" expanded="false" />
-            <element signature="docComment;method#sendCommandParam#0;class#CommandBuilder#0" expanded="false" />
           </folding>
         </state>
       </provider>

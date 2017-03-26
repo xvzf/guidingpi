@@ -3,8 +3,6 @@ package gui;
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.metadata.Metadata;
 import com.drew.metadata.exif.ExifSubIFDDirectory;
-import gui.lib.CommandBuilder;
-import gui.lib.CommandID;
 import gui.lib.Settingsmanager;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -111,15 +109,7 @@ public class mainController extends Stage{
     @FXML
     protected void btnApplySettings_OnAction()
     {
-        try {
-            Socket socket = new Socket(Settingsmanager.getPreference_String("IP"), Settingsmanager.getPreference_int("PortControl"));
-            CommandBuilder.sendCommandParam(socket, CommandID.SetISOMode,iso);
 
-            socket.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     /**
@@ -128,17 +118,7 @@ public class mainController extends Stage{
     @FXML
     protected void btnGetSettings_OnAction()
     {
-        try {
-            Socket socket = new Socket(Settingsmanager.getPreference_String("IP"), Settingsmanager.getPreference_int("PortControl"));
-            iso = CommandBuilder.sendAndReceive(socket,CommandID.GetISOMode);
 
-            lblISO.setText(""+iso);
-
-            socket.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     /**
