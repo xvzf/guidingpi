@@ -74,9 +74,10 @@
       <file leaf-file-name="mainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/mainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+            <state relative-caret-position="491">
+              <caret line="149" column="68" selection-start-line="149" selection-start-column="68" selection-end-line="149" selection-end-column="68" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
                 <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
                 <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
@@ -91,7 +92,7 @@
       <file leaf-file-name="Settingsmanager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/lib/Settingsmanager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="508">
               <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
               <folding>
                 <element signature="e#630#631#0" expanded="true" />
@@ -113,8 +114,18 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+            <state relative-caret-position="618">
+              <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/dialogs/stylesheet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -123,7 +134,7 @@
       <file leaf-file-name="connectionSettingsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/dialogs/connectionSettingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
+            <state relative-caret-position="1137">
               <caret line="92" column="67" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -143,8 +154,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="XSLT Stylesheet" />
         <option value="Class" />
+        <option value="XSLT Stylesheet" />
       </list>
     </option>
   </component>
@@ -166,12 +177,13 @@
         <option value="$PROJECT_DIR$/src/sample/mainController.java" />
         <option value="$PROJECT_DIR$/src/gui/dialog/connectionSettingsController.java" />
         <option value="$PROJECT_DIR$/src/gui/dialog/connectionSettings.fxml" />
-        <option value="$PROJECT_DIR$/src/gui/main.fxml" />
         <option value="$PROJECT_DIR$/src/gui/dialogs/connectionSettingsController.java" />
         <option value="$PROJECT_DIR$/src/gui/Main.java" />
         <option value="$PROJECT_DIR$/src/gui/lib/CommandID.java" />
         <option value="$PROJECT_DIR$/src/gui/lib/CommandBuilder.java" />
         <option value="$PROJECT_DIR$/src/gui/lib/Settingsmanager.java" />
+        <option value="$PROJECT_DIR$/src/gui/main.fxml" />
+        <option value="$PROJECT_DIR$/src/gui/dialogs/stylesheet.css" />
         <option value="$PROJECT_DIR$/src/gui/mainController.java" />
       </list>
     </option>
@@ -276,28 +288,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dialogs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -318,7 +308,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
     <property name="settings.editor.splitter.proportion" value="0.34050882" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -573,6 +563,22 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
     <configuration default="false" name="Main" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -705,6 +711,18 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="gui" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="gui" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -725,6 +743,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
@@ -776,6 +795,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
@@ -827,6 +847,7 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />
@@ -891,22 +912,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandID.java" />
     <entry file="file://$PROJECT_DIR$/src/gui/lib/CommandBuilder.java" />
     <entry file="file://$PROJECT_DIR$/src/gui/dialogs/connectionSettingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
+        <state relative-caret-position="1137">
           <caret line="92" column="67" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -919,9 +929,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/dialogs/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/lib/Settingsmanager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="508">
           <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
           <folding>
             <element signature="e#630#631#0" expanded="true" />
@@ -936,11 +954,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/mainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        <state relative-caret-position="491">
+          <caret line="149" column="68" selection-start-line="149" selection-start-column="68" selection-end-line="149" selection-end-column="68" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="method#btnStart_OnMouseClicked#0;class#mainController#0" expanded="false" />
             <element signature="docComment;method#btnStop_OnMouseClicked#0;class#mainController#0" expanded="false" />

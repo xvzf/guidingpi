@@ -46,6 +46,7 @@ public class mainController extends Stage{
     // directory where the images should be saved (debug images)
     private File selectedDirectory;
 
+    // keep important settings in memory
     private int iso = 100;
 
     @FXML
@@ -59,6 +60,12 @@ public class mainController extends Stage{
 
     @FXML
     Label lblISO;
+
+    @FXML
+    Slider sliderExposureTime;
+
+    @FXML
+    Label lblExposureTime;
 
 
     /**
@@ -133,6 +140,14 @@ public class mainController extends Stage{
                                 Number old_val, Number new_val) {
                 lblISO.setText(""+ new_val.intValue()*100);
                 iso=new_val.intValue()*100;
+            }
+        });
+
+        // add change listener for the exposure time slider
+        sliderExposureTime.valueProperty().addListener(new ChangeListener<Number>() {
+            public void changed(ObservableValue<? extends Number> ov,
+                                Number old_val, Number new_val) {
+                lblExposureTime.setText((new_val.intValue()/100)*100+"ms");
             }
         });
     }
