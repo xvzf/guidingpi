@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -15,7 +17,15 @@ import java.util.ResourceBundle;
 
 
 /**
- * Created by Dominik on 25.03.2017.
+ * GUIDINGPI
+ *
+ *   Copyright (C) 2017 Matthias Riegler <matthias@xvzf.tech>
+ *   Copyright (C) 2017 Dominik  Laa     <dominik@xvzf.tech>
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
  */
 public class connectionSettingsController extends Stage implements Initializable {
     @FXML

@@ -32,12 +32,12 @@ class AstroServer(object):
     def __init__(self):
         super(AstroServer, self).__init__()
         # Force sensor mode 4 (for 2x2 binned images)
-        # we can also try 4x4 binned mode but that's only supported by
-        # the v1 module
+        # TODO: add support for the v1 camera module
         self.camera = PiCamera(
             resolution=(1640, 1232),
             sensor_mode=4)
- 
+
+        # apply default settings
         self.camera.sharpness = 0
         self.camera.contrast = 90
         self.camera.brightness = 76
@@ -56,31 +56,41 @@ class AstroServer(object):
         self.camera.crop = (0.0, 0.0, 1.0, 1.0)
         self.camera.framerate = Fraction(1, 3)
         print("self.camera setting applied - wait 15 seconds to get right gain values")
-        time.sleep(15) # should be way enough!
-        self.camera.shutter_speed = 3000000 #3000000 = 3sec
+        time.sleep(15)
+        self.camera.shutter_speed = 3000000 # = 3sec
         
-        # Setup Socket
-        self.setupsocket()
-        
-        start_new_thread(AstroServer.updatethread, (self,))
- 
+        # setup image socket
+        self.setupimagesocket()
 
-    def setupsocket(self):
-        self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a socket object
-        port = 8001                             # Reserve a port for your service.
-        self.server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) # allow socket overriding
-        self.server.bind(("0.0.0.0", port))     # wait for incoming connection
- 
+        # setup control socket
+        self.setupcontrolsocket()
+
+        # start image thread
+        start_new_thread(AstroServer.updatethread, (self,))
+
+        # start control thread
+        start_new_thread(AstroServer.updatecontrolthread, (self,))
+
+    def setupimagesocket(self):
+        self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)     # Create a socket object
+        port = 8001                                                         # Reserve a port for your service.
+        self.server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)   # allow socket overriding
+        self.server.bind(("0.0.0.0", port))                                 # wait for incoming connection
+
+    def setupcontrolsocket(self):
+        self.control = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    # Create a socket object
+        port = 8002                                                         # Reserve a port for your service.
+        self.control.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)  # allow socket overriding
+        self.control.bind(("0.0.0.0", port))                                # wait for incoming connection
 
     def sendimage(self, connection):
-        print("Start sending")
-        # open image
-        f = open("/tmp/" + self.captures[-1], 'rb')
+        print("Start sending")                          # info message
 
-        connection.sendall(f.read())
-        f.close()
-        print("Sending Done.")
- 
+        f = open("/tmp/" + self.captures[-1], 'rb')     # open image
+        connection.sendall(f.read())                    # send complete image
+        f.close()                                       # close image
+
+        print("Sending Done.")                          # info message
 
     def newimg(self):
         filename = datetime.now().strftime("%H:%M:%S:")+str(datetime.now().microsecond)
@@ -103,20 +113,46 @@ class AstroServer(object):
 
         print(filename)
 
-
     def updatethread(self):
+        # keep capturing new images
         while True:
             self.newimg()
 
+    def updatecontrolthread(self):
+        # keep waiting for request on the control port
+        try:
+            self.control.listen(1)
+            while True:
+                conn, addr = self.control.accept()  # c usually used for client ;)
+                print("Waiting for a connection on the control port...")
+                commandid = int.from_bytes(conn.recv(4), byteorder='big')
+                print("Connection from: " + str(addr) + "[control port] -> Command:" + str(commandid))
+                # Add control interfacing options here
+                if commandid == 1:
+                    self.camera.shutter_speed = int.from_bytes(conn.recv(4), byteorder='big')*1000
+                    print("shutter speed set to: "+str(self.camera.shutter_speed))
+                elif commandid == 2:
+                    conn.send(struct.unpack("4b", struct.pack("I", self.camera.shutter_speed)))
+                elif commandid == 3:
+                    self.camera.ISO = int.from_bytes(conn.recv(4), byteorder='big')
+                    print("iso set to: " + str(self.camera.ISO))
+                elif commandid == 4:
+                    val = pack('!i', self.camera.iso)
+                    conn.send(val)
+
+                conn.close()
+        except Exception as e:
+            raise e
+        finally:
+            self.control.close()
 
     def startlistening(self):
         try:
             self.server.listen(1)                 # Now wait for client connection.
             while True:
-                print("Waiting for a connection...")
-                conn, addr = self.server.accept() # c usually used for client ;)
-                # generate timestamp from the filename
-                timestamp = str(self.captures[-1])
+                print("Waiting for a connection on the image port...")
+                conn, addr = self.server.accept()   # c usually used for client ;)
+                timestamp = str(self.captures[-1])  # generate timestamp from the filename
                 print("Connection from: " + str(addr) + " sending: " + timestamp)
                 self.sendimage(conn)
                 conn.close()
@@ -124,7 +160,6 @@ class AstroServer(object):
             raise e
         finally:
             self.server.close()
- 
 
 
 def main():
